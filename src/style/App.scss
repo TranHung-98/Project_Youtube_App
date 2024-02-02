@@ -1,5 +1,8 @@
 .App {
+  color: white;
   text-align: center;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
   header {
     .App-logo {
       height: 20vmin;
@@ -17,16 +20,35 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-control {
+  &:focus {
+    color: white;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  &::placeholder {
+    color: #dee2e6;
+  }
+  color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 6px 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: transparent;
+}
+
+button.btn.btn-primary {
+  border: 1px solid #dee2e6;
+  border-left: none;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
 }
 
 @keyframes App-logo-spin {
